@@ -44,7 +44,7 @@ fi
 echo "Kitchen is converging ..."
 bundle exec kitchen converge
 
-sleep 30
+sleep 15
 
 echo "Kitchen is testing ..."
 bundle exec kitchen verify
