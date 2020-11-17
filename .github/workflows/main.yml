@@ -9,6 +9,8 @@ jobs:
   amazonlinux:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out code
+        uses: actions/checkout@v2
       - name: Amazon linux - (Manager + Agent)
         uses: './.github/actions/test_manager_and_agent'
         env:
@@ -20,6 +22,8 @@ jobs:
   centos7:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out code
+        uses: actions/checkout@v2
       - name: CentOS 7 - (Manager + Agent)
         uses: './.github/actions/test_manager_and_agent'
         env:
@@ -31,6 +35,8 @@ jobs:
   ubuntu16:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out code
+        uses: actions/checkout@v2
       - name: Ubuntu 16.04 - (Manager + Agent)
         uses: './.github/actions/test_manager_and_agent'
         env:
@@ -43,6 +49,8 @@ jobs:
   ubuntu18:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out code
+        uses: actions/checkout@v2
       - name: Ubuntu 18.04 - (Manager + Agent)
         uses: './.github/actions/test_manager_and_agent'
         env:
