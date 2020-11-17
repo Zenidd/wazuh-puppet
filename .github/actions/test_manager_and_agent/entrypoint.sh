@@ -44,10 +44,11 @@ fi
 echo "Kitchen is converging ..."
 bundle exec kitchen converge
 
+sleep 2m
+
 echo "Kitchen is testing ..."
 bundle exec kitchen verify
 
-sleep 2m
 
 echo "Kitchen is destroying"
 bundle exec kitchen destroy
